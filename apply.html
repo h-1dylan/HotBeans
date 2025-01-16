@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Application</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="scripts/apply.js"></script>
+</head>
+<body>
+    <div class="HeaderRow">
+        <div class="HeaderColumnLeft">
+        </div>
+        <div class="HeaderColumnRight">
+            <h1 class="HeaderTitle">The Hot Beans Web Developmet</h1>
+            <p class="HeaderText">Hot Beans Web copyright (c) 2022 </p>
+        </div>
+    </div>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="meettheteam.html">Meet The Team</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="apply.html">Apply</a>
+        <a href="externalcourses.html">Web Development Courses</a>
+    </div>
+    <div class="row">
+        <div class="columnLeft">
+            <h1> </h1>
+        </div>
+        <!--centre content-->
+        <div class="columnCentre">
+            <h1>Want to work for the Hot Bean Web Development Company?</h1>
+            <h2>If so. Please complete this online application form to apply for what Job you want</h2>
+            <h3>Please note the questions that have (*) Asterisk are REQUIRED to be answer</h3>
+            <!--form that submits to a thank you holding page-->
+        <form name="VacancyApplicationForm" action="thankyou.html" method="get">
+
+            <p>
+                <label>*Please Input First Name</label>
+                <!--input text box-->
+                <input type="text" id="fname" name="fname" />
+                <br />
+                <label id="fNameError" class="Error"></label>
+            </p>
+            <p>
+                <label>*Please Input last Name</label>
+                <!--input text box-->
+                <input type="text" id="sname" name="sname" />
+                <br />
+                <label id="sNameError" class="Error"></label>
+            </p>
+            <p>
+                <label>*Do you live in the UK</label>
+                <!--input radio button group yes no-->
+                <input type="radio" id="ukResidentYes" name="ukResident" value="Yes"/><label for="ukResedient">Yes</label>
+                <input type="radio" id="ukResidentNo" name="ukResident" value="No" /><label for="ukResedient">No</label>
+                <br />
+                <label id="ukResidentError" class="Error"></label>
+            </p>
+            <p>
+                <label>*Please Input your personal Telephone Number</label>
+                <!--input text box-->
+                <input type="text" id="telNo" name="telNo" />
+                <br />
+                <label id="telNoError" class="Error"></label>
+            </p>
+            <p>
+                <label>*Please select what job you wish for</label>
+                <!--input text box-->
+             <select name="JobType" id="JobType">
+
+                 <option value="Senior Web Developer">Junior Web Developer</option>
+                 <option value="Senior Web Developer">Senior Web Developer</option>
+                 <option value="Web Analyst">Web Analyst</option>
+
+
+                <br />
+                </select>
+                <label id="jobTypeError" class="Error"></label>
+            </p>
+            <p>
+                <label for="txtAnyOtherInfo">Please add any addition information that can support your application.</label>
+                <!--input text area for free text entry-->
+                <textarea id="txtAnyOtherInfo"name="txtAnyOtherInfo" rows="4" cols="50">
+                        </textarea>
+
+            </p>
+            <p>
+                <!--button that on clicked runs the validation check javascript-->
+                <button onclick="return ValidateVacancyForm()">Apply Now</button>
+
+
+            </p>
+
+
+
+
+
+
+
+
+        </form>
+        
+        
+        </div>
+
+        <div class="footer"></div>
+        <table>
+            <tr>
+                <td><img width=50 height=50 src="images/facebook.png">
+                <td>
+                <td><img width=50 height=50 src="images/X.png">
+                <td>
+                <td><img width=50 height=50 src="images/insta.png">
+                <td>
+            </tr>
+        </table>
+</body>
+</html>
