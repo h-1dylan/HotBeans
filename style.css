@@ -7,7 +7,7 @@
 /***************** Style the header******************* */
 /* Create two equal columns that floats next to each other */
 .HeaderColumnLeft {
-    background-image: url('../images/HotBeansLogo.png');
+    background-image: url('https://github.com/h-1dylan/HotBeans/blob/main/images/HotBeansLogo.png?raw=true');
     background-repeat: no-repeat;
     float: left;
     width: 40%;
